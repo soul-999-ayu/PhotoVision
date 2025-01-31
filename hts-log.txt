@@ -1,0 +1,137 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 30 Jan 2025 15:33:41 at https://towasales.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://towasales.in/ -O1 "D:\Projects\Client\PhotoVision\PhotoVision" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:34:16	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://towasales.in/)
+15:35:55	Warning: 	Moved Permanently for https://towasales.in/product-categories/takagi/
+15:35:55	Warning: 	File has moved from https://towasales.in/product-categories/takagi/ to https://towasales.in/product-categories/operating-microscope/
+15:35:55	Error: 	"Not Found" (404) at link https://towasales.in/product-categories/slitlamp/ (from https://towasales.in/)
+15:35:55	Warning: 	Moved Permanently for https://towasales.in/product-categories/visionix/
+15:35:55	Warning: 	File has moved from https://towasales.in/product-categories/visionix/ to https://towasales.in/product-categories/autorefractor-keratometer/
+15:35:55	Warning: 	Moved Permanently for https://towasales.in/product-categories/neitz/
+15:35:55	Warning: 	File has moved from https://towasales.in/product-categories/neitz/ to https://towasales.in/product-categories/indirect-ophthalmoscope/
+15:35:55	Warning: 	Moved Permanently for https://towasales.in/product-categories/righton/
+15:35:55	Warning: 	File has moved from https://towasales.in/product-categories/righton/ to https://towasales.in/product-categories/aspherical-lens/
+15:35:55	Warning: 	Moved Permanently for https://towasales.in/product-categories/bvi/
+15:35:55	Warning: 	File has moved from https://towasales.in/product-categories/bvi/ to https://towasales.in/product-categories/phaco-machine/
+15:35:59	Error: 	"Not Found" (404) at link https://towasales.in/wp-content/themes/towa/assets/owlslider/owl.video.play.png (from https://towasales.in/wp-content/litespeed/css/e426aa35298fb873b20e39928bbfcdf7.css?ver=fcdf7)
+15:35:59	Warning: 	Moved Permanently for https://towasales.in/?p=286
+15:35:59	Warning: 	File has moved from https://towasales.in/?p=286 to https://towasales.in/about-us/
+15:36:00	Warning: 	Moved Permanently for https://towasales.in/our-products/
+15:36:00	Warning: 	File has moved from https://towasales.in/our-products/ to https://towasales.in/product-categories/operating-microscope/
+15:37:47	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/io-α-led/ (from https://towasales.in/product-categories/indirect-ophthalmoscope/)
+15:37:47	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/io-α-led-camera/ (from https://towasales.in/product-categories/indirect-ophthalmoscope-with-camera/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13-led/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13a/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-rc/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13-rx-led/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13-rxsp-led/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13rx/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:37:53	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/rc-ⅱ/ (from https://towasales.in/product-categories/direct-ophthalmoscopes/)
+15:38:30	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13-rx-led-2/ (from https://towasales.in/product-categories/retinoscopes/)
+15:38:30	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13-rxsp-led-2/ (from https://towasales.in/product-categories/retinoscopes/)
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=316
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=316 to https://towasales.in/distributors/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=303
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=303 to https://towasales.in/careers/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=357
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=357 to https://towasales.in/contact-us/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=103
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=103 to https://towasales.in/our-products/om-19/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=589
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=589 to https://towasales.in/our-products/bls-1-bls-2-bls-3-bld-3/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=432
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=432 to https://towasales.in/our-products/r-evolution-cr/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=201
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=201 to https://towasales.in/our-products/14d/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=183
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=183 to https://towasales.in/our-products/retinomax-kscreen/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=1425
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=1425 to https://towasales.in/our-products/bxarcled-rc-iii/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=97
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=97 to https://towasales.in/our-products/om-6/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=100
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=100 to https://towasales.in/our-products/om-9/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=142
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=142 to https://towasales.in/our-products/700gl/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=145
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=145 to https://towasales.in/our-products/700gl-nsw/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=148
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=148 to https://towasales.in/our-products/30gl/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=151
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=151 to https://towasales.in/our-products/4zl/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=154
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=154 to https://towasales.in/our-products/2zl/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=157
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=157 to https://towasales.in/our-products/2zl-bg/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=160
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=160 to https://towasales.in/our-products/ms1/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=163
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=163 to https://towasales.in/our-products/at-1/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=168
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=168 to https://towasales.in/our-products/dis1/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=171
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=171 to https://towasales.in/our-products/td-10/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=174
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=174 to https://towasales.in/our-products/cgt-2000/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=177
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=177 to https://towasales.in/our-products/snt-700/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=180
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=180 to https://towasales.in/our-products/speedy-k2/
+15:39:07	Warning: 	Moved Permanently for https://towasales.in/?p=186
+15:39:07	Warning: 	File has moved from https://towasales.in/?p=186 to https://towasales.in/our-products/retinomax-k-plus-5/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=192
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=192 to https://towasales.in/our-products/retinomax-5/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=189
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=189 to https://towasales.in/our-products/retinomax-screen/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=198
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=198 to https://towasales.in/our-products/mw-50d-clinical/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=195
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=195 to https://towasales.in/our-products/mw-50d-digital/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=604
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=604 to https://towasales.in/our-products/blp-4blp-6/
+15:39:08	Error: 	"Error when decompressing" (-1) at link https://towasales.in/our-products/bxα-13rx-2/ (from https://towasales.in/product-categories/retinoscopes/page/2/)
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=1434
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=1434 to https://towasales.in/our-products/rxrcled-rxrcspled-rc-iii/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=662
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=662 to https://towasales.in/our-products/rx-3-led/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=668
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=668 to https://towasales.in/our-products/rx-3sp-led/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=674
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=674 to https://towasales.in/our-products/rx-3/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=680
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=680 to https://towasales.in/our-products/rx-3a/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=686
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=686 to https://towasales.in/our-products/rx-rc/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=693
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=693 to https://towasales.in/our-products/rx-3sp/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=698
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=698 to https://towasales.in/our-products/rx-3asp/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=720
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=720 to https://towasales.in/our-products/cgx-4-led/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=722
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=722 to https://towasales.in/our-products/cgx-3-led/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=721
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=721 to https://towasales.in/our-products/cg-auto-ii/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=723
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=723 to https://towasales.in/our-products/cl-s/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=204
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=204 to https://towasales.in/our-products/20d/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=207
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=207 to https://towasales.in/our-products/78d/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=210
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=210 to https://towasales.in/our-products/90d/
+15:39:08	Warning: 	Moved Permanently for https://towasales.in/?p=428
+15:39:08	Warning: 	File has moved from https://towasales.in/?p=428 to https://towasales.in/our-products/r-evo-smart-s/
+15:39:12	Warning: 	Moved Permanently for https://towasales.in/?p=420
+15:39:12	Warning: 	File has moved from https://towasales.in/?p=420 to https://towasales.in/our-products/r-evo-smart-e/
+15:39:12	Warning: 	Moved Permanently for https://towasales.in/?p=436
+15:39:12	Warning: 	File has moved from https://towasales.in/?p=436 to https://towasales.in/our-products/r-evo-smart-cr/
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 minutes 31 seconds : 495 links scanned, 423 files written (108938562 bytes overall) [106169163 bytes received at 320752 bytes/sec], 5046096 bytes transferred using HTTP compression in 88 files, ratio 33%, 7.6 requests per connection
+(16 errors, 110 warnings, 0 messages)
