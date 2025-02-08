@@ -50,3 +50,5 @@ function hide1(text){
         document.getElementById("shower2").style.display = 'none'
     } 
 }
+
+document.querySelectorAll('.navbar-brand')[0].setAttribute('href', '../../index.html');
