@@ -254,9 +254,11 @@
                      </div>
                      <div class="col-md-9 border-left">
                         <div class="cat-archive-right">
+                           <h1 style="font-weight: bold; text-decoration: underline;">Cameras:</h1>
+                           <br>
                            <div class="page-headerarchive">
-                              <h1 class="page-title">Mirrorless Cameras</h1>
-                              <div class="category-archive-meta">
+                              <h1 class="page-title" onclick="mirrorless()" id="mirrorless">> Mirrorless Cameras</h1>
+                              <div class="category-archive-meta" id="mirrorless1" style="display: none;">
                                  <p>Enter a new dimension of Nikon Imaging with Z Series mirrorless cameras,
                                     created from decades of refining camera design and performance.
                                  </p>
@@ -265,7 +267,7 @@
                                  <button id="hider">Read Less</button>
                               </div>
                            </div>
-                           <div class="product-section">
+                           <div class="product-section" id="mirrorless2" style="display: none;">
                               <div class="product-list">
                                  <div class="col-md-6">
                                     <div class="card product-card" id="post-570">
@@ -412,20 +414,21 @@
                               </div>
                            </div>
                         </div>
-                        <br><br>
                         <!-- <div class="col-md-9 border-left"> -->
                         <div class="cat-archive-right">
                            <div class="page-headerarchive">
-                              <h1 class="page-title">DSLR</h1>
-                              <p>Nikon DSLRs offer high-quality image capture, fast autofocus, full manual controls, and versatile lens compatibility for both photography and video.</p>
+                              <h1 class="page-title" onclick="dslr()" id="dslr">> DSLR</h1>
+                              <div id="dslr1" style="display: none;">
+                                 <p>Nikon DSLRs offer high-quality image capture, fast autofocus, full manual controls, and versatile lens compatibility for both photography and video.</p>
                               <div class="category-archive-meta">
                                  <p id="contoo">Having already created 21 of the most optically precise, versatile lenses and teleconverters in its history, Nikon has many more lenses coming your way. Expect even more from the ever-expanding Z series, next year and beyond.</p>
                                  <!-- <p>From ultra-wide to telephoto and everything in between—including two teleconverters and a trinity of f/2.8 zooms—the NIKKOR Z line-up covers a broad focal length range with unmatched performance.</p> -->
                                  <button id="shower1" onclick="hide('h')">Read More</button>
                                  <button id="hider1" onclick="hide('s')" style="display: none;">Read Less</button>
                               </div>
+                              </div>
                            </div>
-                           <div class="product-section">
+                           <div class="product-section" id="dslr2" style="display: none;">
                               <div class="product-list">
                                  <!-- D6 -->
                                  <div class="col-md-6">
@@ -483,20 +486,21 @@
                               <!-- </div> -->
                            </div>
                         </div>
-                        <br><br>
                         <!-- <div class="col-md-9 border-left"> -->
                         <div class="cat-archive-right">
                            <div class="page-headerarchive">
-                              <h1 class="page-title">Compact Camera</h1>
-                              <p>Nikon compact cameras combine portability with powerful features, making them ideal for everyday photography. They offer high-resolution sensors, easy-to-use controls, and advanced shooting modes for quick and stunning results.</p>
-                              <div class="category-archive-meta">
-                                 <p id="contoo1">With optical zoom, wide-angle lenses, and full HD video recording, Nikon compact cameras deliver versatility in a compact design. Their user-friendly interface and long battery life make them perfect for both beginners and experienced photographers.</p>
-                                 <!-- <p>From ultra-wide to telephoto and everything in between—including two teleconverters and a trinity of f/2.8 zooms—the NIKKOR Z line-up covers a broad focal length range with unmatched performance.</p> -->
-                                 <button id="shower2" onclick="hide1('h')">Read More</button>
-                                 <button id="hider2" onclick="hide1('s')" style="display: none;">Read Less</button>
+                              <h1 class="page-title" onclick="cc()" id="cc">> Compact Camera</h1>
+                              <div id="cc1" style="display: none;">
+                                 <p>Nikon compact cameras combine portability with powerful features, making them ideal for everyday photography. They offer high-resolution sensors, easy-to-use controls, and advanced shooting modes for quick and stunning results.</p>
+                                 <div class="category-archive-meta">
+                                    <p id="contoo1">With optical zoom, wide-angle lenses, and full HD video recording, Nikon compact cameras deliver versatility in a compact design. Their user-friendly interface and long battery life make them perfect for both beginners and experienced photographers.</p>
+                                    <!-- <p>From ultra-wide to telephoto and everything in between—including two teleconverters and a trinity of f/2.8 zooms—the NIKKOR Z line-up covers a broad focal length range with unmatched performance.</p> -->
+                                    <button id="shower2" onclick="hide1('h')">Read More</button>
+                                    <button id="hider2" onclick="hide1('s')" style="display: none;">Read Less</button>
+                                 </div>
                               </div>
                            </div>
-                           <div class="product-section">
+                           <div class="product-section" id="cc2" style="display: none;">
                               <div class="product-list">
                                  <!-- P950 -->
                                  <div class="col-md-6">
@@ -527,7 +531,57 @@
                               </div>
                               <!-- </div> -->
                            </div>
+
+                           <h1 style="font-weight: bold; text-decoration: underline;">Lenses (Z Mount):</h1>
+
+                           <br>
+                           <div class="page-headerarchive">
+                              <h1 class="page-title" onclick="wap()" id="wap">> Wide Angle Prime</h1>
+                              <div id="wap1" style="display: none;">
+                                 <p>NIKKOR quality at its absolute best.</p>
+                                 <div class="category-archive-meta">
+                                    <p id="contoo2">At the top of the ever-expanding NIKKOR Z mirrorless lens lineup, S-Line lenses push Nikon’s tradition of optical excellence and innovation to unprecedented new heights. Superior performance and resolution. Sophisticated features and operability. Specialized technologies and reliability enhancements. All while taking full advantage of the monumental Nikon Z mount and adhering to the strictest image quality and build standards.</p>
+                                    <!-- <p>From ultra-wide to telephoto and everything in between—including two teleconverters and a trinity of f/2.8 zooms—the NIKKOR Z line-up covers a broad focal length range with unmatched performance.</p> -->
+                                    <button id="shower3" onclick="hide2('h')">Read More</button>
+                                    <button id="hider3" onclick="hide2('s')" style="display: none;">Read Less</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="product-section" id="wap2" style="display: none;">
+                              <div class="product-list">
+                                 <!-- P950 -->
+                                 <div class="col-md-6">
+                                    <div class="card product-card" id="post-570">
+                                       <a href="../../our-products/io-%ce%b1-led/index.html" title="Permalink to IO-α LED" rel="bookmark">
+                                          <div class="product-img-top">
+                                             <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MDIiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgNzAyIDYwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=" width="702" height="600" data-src="https://www.photovision.co.in/our-products/z35/main.webp" class="attachment-large size-large wp-post-image" alt="Visionix Retinomax K+Screeen" decoding="async" />
+                                          </div>
+                                          <div class="card-body">
+                                             <h3 class="card-title">COOLPIX P950 BK IN</h3>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <!-- P1100 -->
+                                 <div class="col-md-6">
+                                    <div class="card product-card" id="post-570">
+                                       <a href="../../our-products/io-%ce%b1-led/index.html" title="Permalink to IO-α LED" rel="bookmark">
+                                          <div class="product-img-top">
+                                             <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MDIiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgNzAyIDYwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=" width="702" height="600" data-src="https://www.photovision.co.in/our-products/p1100/main.png" class="attachment-large size-large wp-post-image" alt="Visionix Retinomax K+Screeen" decoding="async" />
+                                          </div>
+                                          <div class="card-body">
+                                             <h3 class="card-title">COOLPIX P1100</h3>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- </div> -->
+                           </div>
+
+
                         </div>
+                        
                         <div class="clearfix"></div>
                      </div>
                   </div>
