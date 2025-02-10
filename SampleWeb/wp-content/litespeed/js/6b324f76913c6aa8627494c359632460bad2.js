@@ -118,3 +118,5 @@ function hide2(text){
 }
 
 document.querySelectorAll('.navbar-brand')[0].setAttribute('href', '../../index.html');
+
+console.log("js setup up")

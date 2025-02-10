@@ -50,3 +50,73 @@ function hide1(text){
         document.getElementById("shower2").style.display = 'none'
     } 
 }
+
+function mirrorless(){
+    if(document.getElementById('mirrorless1').style.display=='none'){
+        document.getElementById('mirrorless1').style.display='block';
+        document.getElementById('mirrorless2').style.display='block';
+        document.getElementById('mirrorless').innerHTML = "< Mirrorless Cameras";
+    }
+    else{
+        document.getElementById('mirrorless1').style.display='none';
+        document.getElementById('mirrorless2').style.display='none';
+        document.getElementById('mirrorless').innerHTML = "> Mirrorless Cameras";
+    }
+}
+
+
+function dslr(){
+    if(document.getElementById('dslr1').style.display=='none'){
+        document.getElementById('dslr1').style.display='block';
+        document.getElementById('dslr2').style.display='block';
+        document.getElementById('dslr').innerHTML = "< DSLR";
+    }
+    else{
+        document.getElementById('dslr1').style.display='none';
+        document.getElementById('dslr2').style.display='none';
+        document.getElementById('dslr').innerHTML = "> DSLR";
+    }
+}
+
+function cc(){
+    if(document.getElementById('cc1').style.display=='none'){
+        document.getElementById('cc1').style.display='block';
+        document.getElementById('cc2').style.display='block';
+        document.getElementById('cc').innerHTML = "< Compact Camera";
+    }
+    else{
+        document.getElementById('cc1').style.display='none';
+        document.getElementById('cc2').style.display='none';
+        document.getElementById('cc').innerHTML = "> Compact Camera";
+    }
+}
+
+function wap(){
+    if(document.getElementById('wap1').style.display=='none'){
+        document.getElementById('wap1').style.display='block';
+        document.getElementById('wap2').style.display='block';
+        document.getElementById('wap').innerHTML = "< Wide Angle Prime";
+    }
+    else{
+        document.getElementById('wap1').style.display='none';
+        document.getElementById('wap2').style.display='none';
+        document.getElementById('wap').innerHTML = "> Wide Angle Prime";
+    }
+}
+
+function hide2(text){
+    if(text=='s'){
+        document.getElementById("contoo2").style.display = 'none'
+        document.getElementById("hider3").style.display = 'none'
+        document.getElementById("shower3").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo2").style.display = 'block'
+        document.getElementById("hider3").style.display = 'block'
+        document.getElementById("shower3").style.display = 'none'
+    } 
+}
+
+document.querySelectorAll('.navbar-brand')[0].setAttribute('href', '../../index.html');
+
+console.log("js setup up")
