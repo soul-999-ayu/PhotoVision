@@ -95,12 +95,12 @@ function wap(){
     if(document.getElementById('wap1').style.display=='none'){
         document.getElementById('wap1').style.display='block';
         document.getElementById('wap2').style.display='block';
-        document.getElementById('wap').innerHTML = "< Wide Angle Prime";
+        document.getElementById('wap').innerHTML = "< Wide Angle Prime (6)";
     }
     else{
         document.getElementById('wap1').style.display='none';
         document.getElementById('wap2').style.display='none';
-        document.getElementById('wap').innerHTML = "> Wide Angle Prime";
+        document.getElementById('wap').innerHTML = "> Wide Angle Prime (6)";
     }
 }
 
@@ -114,6 +114,214 @@ function hide2(text){
         document.getElementById("contoo2").style.display = 'block'
         document.getElementById("hider3").style.display = 'block'
         document.getElementById("shower3").style.display = 'none'
+    } 
+}
+
+function sp(){
+    if(document.getElementById('sp1').style.display=='none'){
+        document.getElementById('sp1').style.display='block';
+        document.getElementById('sp2').style.display='block';
+        document.getElementById('sp').innerHTML = "< Standard Prime (8)";
+    }
+    else{
+        document.getElementById('sp1').style.display='none';
+        document.getElementById('sp2').style.display='none';
+        document.getElementById('sp').innerHTML = "> Standard Prime (8)";
+    }
+}
+
+function hide3(text){
+    if(text=='s'){
+        document.getElementById("contoo3").style.display = 'none'
+        document.getElementById("hider4").style.display = 'none'
+        document.getElementById("shower4").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo3").style.display = 'block'
+        document.getElementById("hider4").style.display = 'block'
+        document.getElementById("shower4").style.display = 'none'
+    } 
+}
+
+function waz(){
+    if(document.getElementById('waz1').style.display=='none'){
+        document.getElementById('waz1').style.display='block';
+        document.getElementById('waz2').style.display='block';
+        document.getElementById('waz').innerHTML = "< Wide Angle Zoom (4)";
+    }
+    else{
+        document.getElementById('waz1').style.display='none';
+        document.getElementById('waz2').style.display='none';
+        document.getElementById('waz').innerHTML = "> Wide Angle Zoom (4)";
+    }
+}
+
+function hide4(text){
+    if(text=='s'){
+        document.getElementById("contoo4").style.display = 'none'
+        document.getElementById("hider5").style.display = 'none'
+        document.getElementById("shower5").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo4").style.display = 'block'
+        document.getElementById("hider5").style.display = 'block'
+        document.getElementById("shower5").style.display = 'none'
+    } 
+}
+
+function sz(){
+    if(document.getElementById('sz1').style.display=='none'){
+        document.getElementById('sz1').style.display='block';
+        document.getElementById('sz2').style.display='block';
+        document.getElementById('sz').innerHTML = "< Standard Zoom (8)";
+    }
+    else{
+        document.getElementById('sz1').style.display='none';
+        document.getElementById('sz2').style.display='none';
+        document.getElementById('sz').innerHTML = "> Standard Zoom (8)";
+    }
+}
+
+function hide5(text){
+    if(text=='s'){
+        document.getElementById("contoo5").style.display = 'none'
+        document.getElementById("hider6").style.display = 'none'
+        document.getElementById("shower6").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo5").style.display = 'block'
+        document.getElementById("hider6").style.display = 'block'
+        document.getElementById("shower6").style.display = 'none'
+    } 
+}
+
+function t(){
+    if(document.getElementById('t1').style.display=='none'){
+        document.getElementById('t1').style.display='block';
+        document.getElementById('t2').style.display='block';
+        document.getElementById('t').innerHTML = "< Telephoto (10)";
+    }
+    else{
+        document.getElementById('t1').style.display='none';
+        document.getElementById('t2').style.display='none';
+        document.getElementById('t').innerHTML = "> Telephoto (10)";
+    }
+}
+
+function hide6(text){
+    if(text=='s'){
+        document.getElementById("contoo6").style.display = 'none'
+        document.getElementById("hider7").style.display = 'none'
+        document.getElementById("shower7").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo6").style.display = 'block'
+        document.getElementById("hider7").style.display = 'block'
+        document.getElementById("shower7").style.display = 'none'
+    } 
+}
+
+function st(){
+    if(document.getElementById('st1').style.display=='none'){
+        document.getElementById('st1').style.display='block';
+        document.getElementById('st2').style.display='block';
+        document.getElementById('st').innerHTML = "< Super Telephoto (5)";
+    }
+    else{
+        document.getElementById('st1').style.display='none';
+        document.getElementById('st2').style.display='none';
+        document.getElementById('st').innerHTML = "> Super Telephoto (5)";
+    }
+}
+
+function hide7(text){
+    if(text=='s'){
+        document.getElementById("contoo7").style.display = 'none'
+        document.getElementById("hider8").style.display = 'none'
+        document.getElementById("shower8").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo7").style.display = 'block'
+        document.getElementById("hider8").style.display = 'block'
+        document.getElementById("shower8").style.display = 'none'
+    } 
+}
+
+function t2(){
+    if(document.getElementById('t21').style.display=='none'){
+        document.getElementById('t21').style.display='block';
+        document.getElementById('t22').style.display='block';
+        document.getElementById('t2').innerHTML = "< Teleconverter (2)";
+    }
+    else{
+        document.getElementById('t21').style.display='none';
+        document.getElementById('t22').style.display='none';
+        document.getElementById('t2').innerHTML = "> Teleconverter (2)";
+    }
+}
+
+function hide8(text){
+    if(text=='s'){
+        document.getElementById("contoo8").style.display = 'none'
+        document.getElementById("hider9").style.display = 'none'
+        document.getElementById("shower9").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo8").style.display = 'block'
+        document.getElementById("hider9").style.display = 'block'
+        document.getElementById("shower9").style.display = 'none'
+    } 
+}
+
+function m(){
+    if(document.getElementById('m1').style.display=='none'){
+        document.getElementById('m1').style.display='block';
+        document.getElementById('m2').style.display='block';
+        document.getElementById('m').innerHTML = "< Micro (2)";
+    }
+    else{
+        document.getElementById('m1').style.display='none';
+        document.getElementById('m2').style.display='none';
+        document.getElementById('m').innerHTML = "> Micro (2)";
+    }
+}
+
+function hide9(text){
+    if(text=='s'){
+        document.getElementById("contoo9").style.display = 'none'
+        document.getElementById("hider10").style.display = 'none'
+        document.getElementById("shower10").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo9").style.display = 'block'
+        document.getElementById("hider10").style.display = 'block'
+        document.getElementById("shower10").style.display = 'none'
+    } 
+}
+
+function f(){
+    if(document.getElementById('f1').style.display=='none'){
+        document.getElementById('f1').style.display='block';
+        document.getElementById('f2').style.display='block';
+        document.getElementById('f').innerHTML = "< All (28)";
+    }
+    else{
+        document.getElementById('f1').style.display='none';
+        document.getElementById('f2').style.display='none';
+        document.getElementById('f').innerHTML = "> All (28)";
+    }
+}
+
+function hide10(text){
+    if(text=='s'){
+        document.getElementById("contoo10").style.display = 'none'
+        document.getElementById("hider11").style.display = 'none'
+        document.getElementById("shower11").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo10").style.display = 'block'
+        document.getElementById("hider11").style.display = 'block'
+        document.getElementById("shower11").style.display = 'none'
     } 
 }
 
