@@ -325,6 +325,98 @@ function hide10(text){
     } 
 }
 
+
+function sl(){
+    if(document.getElementById('sl1').style.display=='none'){
+        document.getElementById('sl1').style.display='block';
+        document.getElementById('sl2').style.display='block';
+        document.getElementById('sl').innerHTML = "< Speedlight (4)";
+    }
+    else{
+        document.getElementById('sl1').style.display='none';
+        document.getElementById('sl2').style.display='none';
+        document.getElementById('sl').innerHTML = "> Speedlight (4)";
+    }
+}
+
+function hide11(text){
+    if(text=='s'){
+        document.getElementById("contoo11").style.display = 'none'
+        document.getElementById("hider12").style.display = 'none'
+        document.getElementById("shower12").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo11").style.display = 'block'
+        document.getElementById("hider12").style.display = 'block'
+        document.getElementById("shower12").style.display = 'none'
+    } 
+}
+
+function bat(){
+    if(document.getElementById('bat1').style.display=='none'){
+        document.getElementById('bat1').style.display='block';
+        document.getElementById('bat2').style.display='block';
+        document.getElementById('bat').innerHTML = "< Batteries (8)";
+    }
+    else{
+        document.getElementById('bat1').style.display='none';
+        document.getElementById('bat2').style.display='none';
+        document.getElementById('bat').innerHTML = "> Batteries (8)";
+    }
+}
+
+function hide12(text){
+    if(text=='s'){
+        document.getElementById("contoo12").style.display = 'none'
+        document.getElementById("hider13").style.display = 'none'
+        document.getElementById("shower13").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo12").style.display = 'block'
+        document.getElementById("hider13").style.display = 'block'
+        document.getElementById("shower13").style.display = 'none'
+    } 
+}
+
+function cha(){
+    if(document.getElementById('cha1').style.display=='none'){
+        document.getElementById('cha1').style.display='block';
+        document.getElementById('cha2').style.display='block';
+        document.getElementById('cha').innerHTML = "< Chargers (11)";
+    }
+    else{
+        document.getElementById('cha1').style.display='none';
+        document.getElementById('cha2').style.display='none';
+        document.getElementById('cha').innerHTML = "> Chargers (11)";
+    }
+}
+
+function hide13(text){
+    if(text=='s'){
+        document.getElementById("contoo13").style.display = 'none'
+        document.getElementById("hider14").style.display = 'none'
+        document.getElementById("shower14").style.display = 'block'
+    }
+    if(text=='h'){
+        document.getElementById("contoo13").style.display = 'block'
+        document.getElementById("hider14").style.display = 'block'
+        document.getElementById("shower14").style.display = 'none'
+    } 
+}
+
 document.querySelectorAll('.navbar-brand')[0].setAttribute('href', '../../index.html');
+
+document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    if (link.href === 'tel:+91 98102-73742') {
+        link.href = 'tel:+91-9810064040';
+        link.textContent = "Sales : +91-9810064040";
+    }
+
+    if (link.href === 'tel:+91 87001-08970') {
+        link.href = 'tel:+91-011-47007093';
+        link.textContent = "Service : +91-011-47007093";
+    }
+});
+
 
 console.log("js setup up")
