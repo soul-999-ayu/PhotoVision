@@ -421,7 +421,7 @@ document.querySelectorAll('a[href^="tel:"]').forEach(link => {
 document.querySelectorAll('a[href^="tel:"]').forEach(link => {
     if (link.href === 'tel:011-40648803') {
         link.href = 'tel:+91-9810064040';
-        link.textContent = "Sales : +91-9810064040";
+        link.textContent = "+91-9810064040";
     }
 });
 
