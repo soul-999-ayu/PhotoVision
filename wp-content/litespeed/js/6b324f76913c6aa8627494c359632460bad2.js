@@ -455,6 +455,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let schemaScript = document.querySelector('script.yoast-schema-graph');
+    if (schemaScript) {
+        let schemaJSON = JSON.parse(schemaScript.innerText);
+        let schemaString = JSON.stringify(schemaJSON).replace(/towasales/g, "photovision");
+        schemaScript.innerText = schemaString;
+    }
+});
+
 
 
 console.log("js setup up")
