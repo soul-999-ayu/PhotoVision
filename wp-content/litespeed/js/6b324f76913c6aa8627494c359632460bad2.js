@@ -444,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     let navbarBrand = document.querySelector(".navbar-brand");
     if (navbarBrand) {
-        navbarBrand.style.marginLeft = "-50px";
+        navbarBrand.style.marginLeft = "-27px";
     }
 });
 
