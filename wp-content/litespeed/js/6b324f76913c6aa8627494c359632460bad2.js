@@ -449,20 +449,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    let searchForm = document.querySelector(".search-form");
-    if (searchForm) {
-        searchForm.setAttribute("action", "https://photovision.co.in/");
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     let schemaScript = document.querySelector('script.yoast-schema-graph');
     if (schemaScript) {
         let schemaJSON = JSON.parse(schemaScript.innerText);
-        let schemaString = JSON.stringify(schemaJSON).replace(/towasales/g, "photovision");
+        let schemaString = JSON.stringify(schemaJSON).replace(/towasales\.in/g, "photovision.co.in");
         schemaScript.innerText = schemaString;
     }
 });
+
+
 
 
 
