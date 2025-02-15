@@ -425,5 +425,28 @@ document.querySelectorAll('a[href^="tel:"]').forEach(link => {
     }
 });
 
+document.querySelector(".whatsappbtn").setAttribute("href", "https://wa.link/yrtkts");
+
+document.addEventListener("DOMContentLoaded", function() {
+    let menuItem = document.getElementById("menu-item-406");
+    if (menuItem) {
+        menuItem.remove();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    let categoryItem = document.querySelector(".cat-item.cat-item-20");
+    if (categoryItem) {
+        categoryItem.remove();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    let navbarBrand = document.querySelector(".navbar-brand");
+    if (navbarBrand) {
+        navbarBrand.style.marginLeft = "-50px";
+    }
+});
+
 
 console.log("js setup up")

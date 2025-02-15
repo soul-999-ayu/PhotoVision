@@ -176,7 +176,8 @@ a {
 .main-header .navbar-nav .nav-link {
 	padding-right: 40px;
 	color: #122125;
-	font-weight: 600
+	font-weight: 600;
+	font-size: 20px;
 }
 
 .main-header .navbar-nav .nav-item:last-child .nav-link {
@@ -356,7 +357,7 @@ a {
 }
 
 .upper-banner-text .container {
-	background: rgb(254, 215, 0);
+	background: rgb(87, 89, 90);
 	color: #fff;
 	padding: 30px 15px 15px;
 	max-width: 1100px;
