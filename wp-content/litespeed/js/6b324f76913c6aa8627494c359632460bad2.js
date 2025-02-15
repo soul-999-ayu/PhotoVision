@@ -457,6 +457,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("a[href]").forEach(link => {
+        link.href = link.href
+            .replace(/indirect-ophthalmoscope-with-camera/g, "nikon-service")
+            .replace(/indirect-ophthalmoscope/g, "nikon-products");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let searchForm = document.querySelector(".search-form");
+    if (searchForm) {
+        searchForm.action = searchForm.action.replace("towasales.in", "photovision.co.in");
+    }
+});
+
 
 
 
