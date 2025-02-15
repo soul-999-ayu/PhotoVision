@@ -448,5 +448,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let searchForm = document.querySelector(".search-form");
+    if (searchForm) {
+        searchForm.setAttribute("action", "https://photovision.co.in/");
+    }
+});
+
+
 
 console.log("js setup up")

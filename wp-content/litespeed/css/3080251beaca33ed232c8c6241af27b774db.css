@@ -54,8 +54,8 @@ a {
 }
 
 .btn-primary {
-    background: rgb(254, 215, 0);
-    border-color: rgb(254, 215, 0);
+    background: rgb(74, 76, 77);;
+    border-color: rgb(74, 76, 77);;
 }
 
 .btn-primary:hover {
@@ -1060,9 +1060,9 @@ ul.distributors-address li a:hover {
 		box-shadow: none
 	}
 
-	.main-header .socialmediatop {
+	/* .main-header .socialmediatop {
 		display: none
-	}
+	} */
 
 	.main-header ul.navbar-nav {
 		padding-top: 30px
