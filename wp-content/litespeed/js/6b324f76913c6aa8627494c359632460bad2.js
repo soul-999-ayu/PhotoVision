@@ -472,8 +472,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
-
-
-
-console.log("js setup up")
+document.querySelector(".searchicon").remove();
