@@ -1257,11 +1257,15 @@ ul.distributors-address li a:hover {
 }
 @media (max-width: 768px) {
 	.image-container img {
-		width: 48%;
+		width: 30%;
+	height: auto;
+	object-fit: cover;
 	}
 }
 @media (max-width: 480px) {
 	.image-container img {
-		width: 48%;
+		width: 30%;
+	height: auto;
+	object-fit: cover;
 	}
 }
