@@ -1262,6 +1262,6 @@ ul.distributors-address li a:hover {
 }
 @media (max-width: 480px) {
 	.image-container img {
-		width: 100%;
+		width: 48%;
 	}
 }
