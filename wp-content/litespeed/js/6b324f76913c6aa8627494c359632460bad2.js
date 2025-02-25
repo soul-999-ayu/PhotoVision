@@ -473,3 +473,161 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.querySelector(".searchicon").remove();
+
+(async function () {
+    await import("https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js");
+
+    // Initialize EmailJS
+    emailjs.init("6jfa0_Zaw_1tvuoZ4"); // Replace with your public key
+})();
+
+
+if (document.getElementById('ServiceEnquiry') != null) {
+    
+    // Get the original image's data-src before replacing the content
+    let originalImg = document.querySelector("#ServiceEnquiry img");
+    let originalDataSrc = originalImg ? originalImg.getAttribute("data-src") : "../../wp-content/uploads/2023/08/service.png";
+
+    document.getElementById("ServiceEnquiry").innerHTML = `
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" style="background: #f7f9fb; border-radius: 15px;">
+                <div class="service-enquiry-form">
+                    <h3 class="heading text-center"><strong>Sales & Service</strong> Enquiry</h3>
+                    <form id="enquiry-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><input class="form-control" id="first-name" name="first-name" placeholder="First Name" required style="border-radius: 10px;"/></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><input class="form-control" id="last-name" name="last-name" placeholder="Last Name" required style="border-radius: 10px;"/></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><input class="form-control" id="phone-number" name="phone-number" placeholder="Phone Number" type="tel" required style="border-radius: 10px;"/></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><input class="form-control" id="your-email" name="your-email" placeholder="Your Email" type="email" required style="border-radius: 10px;"/></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required style="border-radius: 10px; resize: none;"></textarea></p>
+                            </div>
+                        </div>
+                        <center>
+                            <div class="g-recaptcha" data-sitekey="6LcBHOEqAAAAABTmy_ymLdlz_lB8Cak_YbsSB495"></div>
+                        </center>
+                        <p><input class="btn btn-primary" id="submit-enquiry" type="submit" value="Submit" /></p>
+                    </form>
+                    <p id="response-message" style="color: green; text-align: center;"></p>
+                </div>
+            </div>
+            <div class="col-lg-6" style="background: #f7f9fb;">
+                <div class="service-enquiry-image">
+                    <img data-src="${originalDataSrc}" data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MzMiIGhlaWdodD0iNTUzIiB2aWV3Qm94PSIwIDAgNjMzIDU1MyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=" width="633" height="553" class="img-fluid" alt="Sales & Service Enquiry for Ophthalmology Equipment" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    `;
+}
+
+
+if(document.getElementById('careerlll')!=null){
+    
+document.getElementById('careerlll').innerHTML = `
+
+
+            <h3 class="heading text-center"><strong>Enquiry Form</strong></h3>
+            <form id="enquiry-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><input class="form-control" id="first-name" name="first-name" placeholder="First Name" required style="border-radius: 10px;"/></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><input class="form-control" id="last-name" name="last-name" placeholder="Last Name" required style="border-radius: 10px;"/></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><input class="form-control" id="phone-number" name="phone-number" placeholder="Phone Number" type="tel" required style="border-radius: 10px;"/></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><input class="form-control" id="your-email" name="your-email" placeholder="Your Email" type="email" required style="border-radius: 10px;"/></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required style="border-radius: 10px; resize: none;"></textarea></p>
+                    </div>
+                </div>
+                <center>
+                    <div class="g-recaptcha" data-sitekey="6LcBHOEqAAAAABTmy_ymLdlz_lB8Cak_YbsSB495"></div>
+                    <p><input class="btn btn-primary" id="submit-enquiry" type="submit" value="Submit" /></p>
+                </center>
+                
+            </form>
+            <p id="response-message" style="color: green; text-align: center;"></p>
+       
+`
+
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    let visionixLink = document.querySelector("#menu-item-1370 a");
+    if (visionixLink) {
+        visionixLink.href = "https://photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html"; // Replace with your new URL
+    }
+});
+
+// document.getElementById('menu-item-1370').href = 'photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html';
+
+
+
+document.getElementById("enquiry-form").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    emailjs.send("service_6el6djc", "template_y13nutu", {
+        first_name: document.getElementById("first-name").value,
+        last_name: document.getElementById("last-name").value,
+        phone: document.getElementById("phone-number").value,
+        email: document.getElementById("your-email").value,
+        message: document.getElementById("message").value
+    }).then(function(response) {
+        document.getElementById("response-message").innerText = "Message sent successfully!";
+        document.getElementById("enquiry-form").reset();
+        grecaptcha.reset();
+    }, function(error) {
+        document.getElementById("response-message").innerText = "Failed to send message. Please try again.";
+    });
+});
+
+
+
+document.getElementById("career-form").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    emailjs.send("service_6el6djc", "template_y13nutu", {
+        first_name: document.getElementById("first-name").value,
+        last_name: document.getElementById("last-name").value,
+        phone: document.getElementById("phone-number").value,
+        email: document.getElementById("your-email").value,
+        message: document.getElementById("message").value
+    }).then(function(response) {
+        document.getElementById("response-message").innerText = "Message sent successfully!";
+        document.getElementById("enquiry-form").reset();
+        grecaptcha.reset();
+    }, function(error) {
+        document.getElementById("response-message").innerText = "Failed to send message. Please try again.";
+    });
+});
+
+
