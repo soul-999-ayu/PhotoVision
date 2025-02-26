@@ -581,6 +581,49 @@ document.getElementById('careerlll').innerHTML = `
 
 }
 
+
+if(document.getElementById('contact-form1')!=null){
+    
+    document.getElementById('contact-form1').innerHTML = `
+    
+    
+                <h3 class="heading text-center"><strong>Send a Message</strong></h3>
+                <form id="enquiry-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><input class="form-control" id="first-name" name="first-name" placeholder="First Name" required style="border-radius: 10px;"/></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><input class="form-control" id="last-name" name="last-name" placeholder="Last Name" required style="border-radius: 10px;"/></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><input class="form-control" id="phone-number" name="phone-number" placeholder="Phone Number" type="tel" required style="border-radius: 10px;"/></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><input class="form-control" id="your-email" name="your-email" placeholder="Your Email" type="email" required style="border-radius: 10px;"/></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required style="border-radius: 10px; resize: none;"></textarea></p>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="g-recaptcha" data-sitekey="6LcBHOEqAAAAABTmy_ymLdlz_lB8Cak_YbsSB495"></div>
+                        <p><input class="btn btn-primary" id="submit-enquiry" type="submit" value="Submit" /></p>
+                    </center>
+                    
+                </form>
+                <p id="response-message" style="color: green; text-align: center;"></p>
+           
+    `
+    
+    }
+
 document.addEventListener("DOMContentLoaded", function () {
     let visionixLink = document.querySelector("#menu-item-1370 a");
     if (visionixLink) {
@@ -590,7 +633,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // document.getElementById('menu-item-1370').href = 'photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html';
 
+document.getElementById("contact-form1").addEventListener("submit", function(event){
+    event.preventDefault();
 
+    emailjs.send("service_6el6djc", "template_y13nutu", {
+        first_name: document.getElementById("first-name").value,
+        last_name: document.getElementById("last-name").value,
+        phone: document.getElementById("phone-number").value,
+        email: document.getElementById("your-email").value,
+        message: document.getElementById("message").value
+    }).then(function(response) {
+        document.getElementById("response-message").innerText = "Message sent successfully!";
+        document.getElementById("enquiry-form").reset();
+        grecaptcha.reset();
+    }, function(error) {
+        document.getElementById("response-message").innerText = "Failed to send message. Please try again.";
+    });
+});
 
 document.getElementById("enquiry-form").addEventListener("submit", function(event){
     event.preventDefault();
