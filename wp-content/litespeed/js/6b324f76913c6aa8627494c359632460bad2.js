@@ -413,8 +413,8 @@ document.querySelectorAll('a[href^="tel:"]').forEach(link => {
     }
 
     if (link.href === 'tel:+91 87001-08970') {
-        link.href = 'tel:+91-011-47007093';
-        link.textContent = "Service : +91-011-47007093";
+        link.href = 'tel:011-47007093';
+        link.textContent = "Service : 011-47007093";
     }
 });
 
