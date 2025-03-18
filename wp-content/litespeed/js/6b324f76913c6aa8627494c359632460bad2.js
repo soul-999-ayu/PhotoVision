@@ -425,7 +425,7 @@ document.querySelectorAll('a[href^="tel:"]').forEach(link => {
     }
 });
 
-document.querySelector(".whatsappbtn").setAttribute("href", "https://wa.link/yrtkts");
+document.querySelector(".whatsappbtn").setAttribute("href", "https://wa.link/kvk4s3");
 
 document.addEventListener("DOMContentLoaded", function() {
     let menuItem = document.getElementById("menu-item-406");
