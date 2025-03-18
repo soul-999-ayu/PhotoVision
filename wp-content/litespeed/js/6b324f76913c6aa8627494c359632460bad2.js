@@ -689,4 +689,14 @@ document.getElementById("career-form").addEventListener("submit", function(event
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('img[src^="https://towasales"]').forEach(img => {
+        if (!img.src.endsWith(".webp")) {
+            img.src += ".webp";
+        }
+        if (img.dataset.src && !img.dataset.src.endsWith(".webp")) {
+            img.dataset.src += ".webp"; // Modify `data-src` if it exists
+        }
+    });
+});
 
