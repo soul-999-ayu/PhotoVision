@@ -690,13 +690,17 @@ document.getElementById("career-form").addEventListener("submit", function(event
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('img[src^="https://towasales"]').forEach(img => {
-        if (!img.src.endsWith(".webp")) {
-            img.src += ".webp";
+    document.querySelectorAll('img').forEach(img => {
+        let src = img.getAttribute('src'); // Get current src
+        let dataSrc = img.getAttribute('data-src'); // Get lazy-loading source
+
+        if (src && src.startsWith("https://towasales") && !src.endsWith(".webp")) {
+            img.setAttribute('src', src + ".webp"); // Update src
         }
-        if (img.dataset.src && !img.dataset.src.endsWith(".webp")) {
-            img.dataset.src += ".webp"; // Modify `data-src` if it exists
+
+        if (dataSrc && dataSrc.startsWith("https://towasales") && !dataSrc.endsWith(".webp")) {
+            img.setAttribute('data-src', dataSrc + ".webp"); // Update data-src for lazy loading
+            console.log(img.getAttribute('data-src'));
         }
     });
 });
-
