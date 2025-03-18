@@ -408,8 +408,8 @@ document.querySelectorAll('.navbar-brand')[0].setAttribute('href', '../../index.
 
 document.querySelectorAll('a[href^="tel:"]').forEach(link => {
     if (link.href === 'tel:+91 98102-73742') {
-        link.href = 'tel:+91-8920429961';
-        link.textContent = "Sales : +91-8920429961";
+        link.href = 'tel:+91-9810064040';
+        link.textContent = "Sales : +91-9810064040";
     }
 
     if (link.href === 'tel:+91 87001-08970') {
@@ -420,8 +420,8 @@ document.querySelectorAll('a[href^="tel:"]').forEach(link => {
 
 document.querySelectorAll('a[href^="tel:"]').forEach(link => {
     if (link.href === 'tel:011-40648803') {
-        link.href = 'tel:+91-8920429961';
-        link.textContent = "+91-8920429961";
+        link.href = 'tel:+91-9810064040';
+        link.textContent = "+91-9810064040";
     }
 });
 
