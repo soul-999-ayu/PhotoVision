@@ -1,10 +1,8 @@
-/*!
-Theme Name: Towa
-Theme URI: https://them.es/starter
-Author: Digitalhive Software Team
-Author URI: https://digitalhive.in/
-Description: Digital Marketing Services
-*/
+.centered_div {
+	display: flex;
+	justify-content: center;
+}
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -406,7 +404,7 @@ a {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	min-height: 280px
+	min-height: 170px
 }
 
 .card-brand ul.brand-cat-list li {
