@@ -7,7 +7,7 @@ let widget_id=grecaptcha.render(recaptchas[j],params);recaptchaWidgets.push(widg
 window.addEventListener('load', function() {
     
     // Add a tiny delay to ensure any menu-building scripts have finished
-    setTimeout(function() {
+    //setTimeout(function() {
         // 1. Select the target menu and the link we'll use as a template
         const takagiSubMenu = document.querySelector('#menu-item-470 .dropdown-menu');
         const digitalImagingLink = document.querySelector('#menu-item-398 a'); // The "Digital Imaging Systems" link
@@ -30,7 +30,7 @@ window.addEventListener('load', function() {
             
             // 6. Set its inner HTML using the NEW, dynamic URL
             newLi.innerHTML = `<a title="Diagnostic & Specialist" href="${newUrl}" class="dropdown-item">
-                <i class="fa fa-fw" aria-hidden="true"></i>&nbsp;Diagnostic & Specialist
+                <i class="fa fa-fw" aria-hidden="true"></i>Diagnostic & Specialist
             </a>`;
 
             // 7. Append the new list item to the submenu
@@ -39,6 +39,6 @@ window.addEventListener('load', function() {
         } else {
             console.log("Error: Could not find the Takagi submenu or the Digital Imaging link.");
         }
-    }, 100); // 100 milliseconds delay
+    //}, 100); // 100 milliseconds delay
 
 });
