@@ -1262,3 +1262,8 @@ ul.distributors-address li a:hover {
 		width: 100%;
 	}
 }
+
+/* Target the nested dropdown menus within the main dropdown */
+.dropdown-menu .dropdown-menu {
+    padding-left: 0;
+}
