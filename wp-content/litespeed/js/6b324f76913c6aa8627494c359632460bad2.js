@@ -642,7 +642,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // href: 'product-categories/new-brand/index.html',
             products: [{
                 name: 'Applanation Tonometer',
-                href: 'product-categories/applanation%20-tonometer-hongdee/index.html'
+                href: 'https://photovision.co.in/product-categories/applanation%20-tonometer-hongdee/index.html'
             }, {
                 name: 'Rebound Tonometer',
                 href: 'our-products/precision-two/index.html'
