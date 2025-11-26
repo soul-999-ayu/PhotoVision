@@ -730,7 +730,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (footerProductsMenu) {
             // Create the list item for the footer
             const footerLi = document.createElement('li');
-            footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom';
+            footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom current-menu-item';
+
+            footerLi.ariaCurrent="page";
 
             // Create the link for the footer
             const footerLink = document.createElement('a');
