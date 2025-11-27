@@ -730,31 +730,31 @@ document.addEventListener("DOMContentLoaded", function () {
             // href: 'product-categories/new-brand/index.html',
             products: [{
                 name: 'Slit Lamp Microscrope',
-                href: '../../../our-products/slitlamp-sun/index.html'
+                href: 'https://photovision.co.in/product-categories/slitlamp-sun/index.html'
             }, {
                 name: 'Ocular Surface Analyzer',
-                href: 'our-products/precision-two/index.html'
+                href: 'https://photovision.co.in/product-categories/scularsurfaceanalyzer-sun/index.html'
             }, {
                 name: 'Perimeter',
-                href: 'our-products/diagnostic-three/index.html'
+                href: 'https://photovision.co.in/product-categories/perimeter-sun/index.html'
             }, {
                 name: 'Fundus Camera',
-                href: 'our-products/surgical-four/index.html'
+                href: 'https://photovision.co.in/product-categories/funduscamera-sun/index.html'
             }, {
                 name: 'Electrophysiology',
-                href: 'our-products/imaging-five/index.html'
+                href: 'https://photovision.co.in/product-categories/electrophysiology-sun/index.html'
                 }, {
                 name: 'Ultrasound',
-                href: 'our-products/diagnostic-three/index.html'
+                href: 'https://photovision.co.in/product-categories/ultrasound-sun/index.html'
             }, {
                 name: 'Non-contact Tonometer',
-                href: 'our-products/imaging-five/index.html'
+                href: 'https://photovision.co.in/product-categories/non-contacttonometer-sun/index.html'
             }, {
                 name: 'Rebound Tonometer',
-                href: 'our-products/diagnostic-three/index.html'
+                href: 'https://photovision.co.in/product-categories/reboundtonometer-sun/index.html'
             }, {
                 name: 'Biometer and Portable ERG',
-                href: 'our-products/diagnostic-three/index.html'
+                href: 'https://photovision.co.in/product-categories/bio-sun/index.html'
             },
         ]
         };
