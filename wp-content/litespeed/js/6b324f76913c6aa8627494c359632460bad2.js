@@ -627,7 +627,7 @@ if(document.getElementById('contact-form1')!=null){
 document.addEventListener("DOMContentLoaded", function () {
     let visionixLink = document.querySelector("#menu-item-1370 a");
     if (visionixLink) {
-        visionixLink.href = "https://photovision.co.in/product-categories/applanation%20-tonometer-hongdee/index.html"; // Replace with your new URL
+        visionixLink.href = "https://photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html"; // Replace with your new URL
     }
 });
 
