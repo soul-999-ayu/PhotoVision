@@ -722,110 +722,110 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    //     document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
 
-    //     // --- Data for the new category and its products ---
-    //     const newCategory = {
-    //         name: 'Sun Kingdom',
-    //         // href: 'product-categories/new-brand/index.html',
-    //         products: [{
-    //             name: 'Slit Lamp Microscrope',
-    //             href: 'our-products/advanced-one/index.html'
-    //         }, {
-    //             name: 'Ocular Surface Analyzer',
-    //             href: 'our-products/precision-two/index.html'
-    //         }, {
-    //             name: 'Perimeter',
-    //             href: 'our-products/diagnostic-three/index.html'
-    //         }, {
-    //             name: 'Fundus Camera',
-    //             href: 'our-products/surgical-four/index.html'
-    //         }, {
-    //             name: 'Electrophysiology',
-    //             href: 'our-products/imaging-five/index.html'
-    //             }, {
-    //             name: 'Ultrasound',
-    //             href: 'our-products/diagnostic-three/index.html'
-    //         }, {
-    //             name: 'Auto Lensmeter',
-    //             href: 'our-products/surgical-four/index.html'
-    //         }, {
-    //             name: 'Non-contact Tonometer',
-    //             href: 'our-products/imaging-five/index.html'
-    //         }, {
-    //             name: 'Rebound Tonometer',
-    //             href: 'our-products/diagnostic-three/index.html'
-    //         },
-    //     ]
-    //     };
+        // --- Data for the new category and its products ---
+        const newCategory = {
+            name: 'Sun Kingdom',
+            // href: 'product-categories/new-brand/index.html',
+            products: [{
+                name: 'Slit Lamp Microscrope',
+                href: '../../../our-products/slitlamp-sun/index.html'
+            }, {
+                name: 'Ocular Surface Analyzer',
+                href: 'our-products/precision-two/index.html'
+            }, {
+                name: 'Perimeter',
+                href: 'our-products/diagnostic-three/index.html'
+            }, {
+                name: 'Fundus Camera',
+                href: 'our-products/surgical-four/index.html'
+            }, {
+                name: 'Electrophysiology',
+                href: 'our-products/imaging-five/index.html'
+                }, {
+                name: 'Ultrasound',
+                href: 'our-products/diagnostic-three/index.html'
+            }, {
+                name: 'Auto Lensmeter',
+                href: 'our-products/surgical-four/index.html'
+            }, {
+                name: 'Non-contact Tonometer',
+                href: 'our-products/imaging-five/index.html'
+            }, {
+                name: 'Rebound Tonometer',
+                href: 'our-products/diagnostic-three/index.html'
+            },
+        ]
+        };
 
-    //     // --- 1. Add New Category to the HEADER Menu ---
+        // --- 1. Add New Category to the HEADER Menu ---
 
-    //     // Find the main "Products" dropdown menu in the header
-    //     const headerProductsMenu = document.querySelector('#menu-item-13 > ul.dropdown-menu');
+        // Find the main "Products" dropdown menu in the header
+        const headerProductsMenu = document.querySelector('#menu-item-13 > ul.dropdown-menu');
 
-    //     if (headerProductsMenu) {
-    //         // Create the main list item for the new category
-    //         const newCategoryLi = document.createElement('li');
-    //         newCategoryLi.className = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-475 dropdown'; // Added a unique ID-like class
+        if (headerProductsMenu) {
+            // Create the main list item for the new category
+            const newCategoryLi = document.createElement('li');
+            newCategoryLi.className = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-475 dropdown'; // Added a unique ID-like class
 
-    //         // Create the link for the new category
-    //         const newCategoryLink = document.createElement('a');
-    //         newCategoryLink.title = newCategory.name;
-    //         newCategoryLink.className = 'dropdown-item';
-    //         // Use innerHTML to include the Font Awesome icon
-    //         newCategoryLink.innerHTML = `<i class="fa ${newCategory.name.replace(' ', '-')}" aria-hidden="true"></i>&nbsp;${newCategory.name}`;
+            // Create the link for the new category
+            const newCategoryLink = document.createElement('a');
+            newCategoryLink.title = newCategory.name;
+            newCategoryLink.className = 'dropdown-item';
+            // Use innerHTML to include the Font Awesome icon
+            newCategoryLink.innerHTML = `<i class="fa ${newCategory.name.replace(' ', '-')}" aria-hidden="true"></i>&nbsp;${newCategory.name}`;
 
-    //         // Create the nested list for the products
-    //         const productsUl = document.createElement('ul');
-    //         productsUl.role = 'menu';
-    //         productsUl.className = 'dropdown-menu';
+            // Create the nested list for the products
+            const productsUl = document.createElement('ul');
+            productsUl.role = 'menu';
+            productsUl.className = 'dropdown-menu';
 
-    //         // Loop through the products and create a list item for each
-    //         newCategory.products.forEach(product => {
-    //             const productLi = document.createElement('li');
-    //             productLi.className = 'menu-item menu-item-type-taxonomy menu-item-object-product_categories';
+            // Loop through the products and create a list item for each
+            newCategory.products.forEach(product => {
+                const productLi = document.createElement('li');
+                productLi.className = 'menu-item menu-item-type-taxonomy menu-item-object-product_categories';
 
-    //             const productLink = document.createElement('a');
-    //             productLink.title = product.name;
-    //             productLink.href = product.href;
-    //             productLink.className = 'dropdown-item';
-    //             productLink.innerHTML = `<i class="fa ${product.name.replace(/\s+/g, '-').toLowerCase()}" aria-hidden="true"></i>&nbsp;${product.name}`;
+                const productLink = document.createElement('a');
+                productLink.title = product.name;
+                productLink.href = product.href;
+                productLink.className = 'dropdown-item';
+                productLink.innerHTML = `<i class="fa ${product.name.replace(/\s+/g, '-').toLowerCase()}" aria-hidden="true"></i>&nbsp;${product.name}`;
 
-    //             productLi.appendChild(productLink);
-    //             productsUl.appendChild(productLi);
-    //         });
+                productLi.appendChild(productLink);
+                productsUl.appendChild(productLi);
+            });
 
-    //         // Assemble the new category element
-    //         newCategoryLi.appendChild(newCategoryLink);
-    //         newCategoryLi.appendChild(productsUl);
+            // Assemble the new category element
+            newCategoryLi.appendChild(newCategoryLink);
+            newCategoryLi.appendChild(productsUl);
 
-    //         // Add the new category to the header menu
-    //         headerProductsMenu.appendChild(newCategoryLi);
-    //     }
+            // Add the new category to the header menu
+            headerProductsMenu.appendChild(newCategoryLi);
+        }
 
-    //     // --- 2. Add New Brand to the FOOTER Menu ---
+        // --- 2. Add New Brand to the FOOTER Menu ---
 
-    //     // Find the "Our Products" list in the footer
-    //     const footerProductsMenu = document.querySelector('footer #menu-our-products');
+        // Find the "Our Products" list in the footer
+        const footerProductsMenu = document.querySelector('footer #menu-our-products');
 
-    //     if (footerProductsMenu) {
-    //         // Create the list item for the footer
-    //         const footerLi = document.createElement('li');
-    //         footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom';
+        if (footerProductsMenu) {
+            // Create the list item for the footer
+            const footerLi = document.createElement('li');
+            footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom';
 
-    //         // Create the link for the footer
-    //         const footerLink = document.createElement('a');
-    //         footerLink.href = newCategory.href;
-    //         footerLink.textContent = newCategory.name;
+            // Create the link for the footer
+            const footerLink = document.createElement('a');
+            footerLink.href = newCategory.href;
+            footerLink.textContent = newCategory.name;
 
-    //         // Assemble and add it to the footer list
-    //         footerLi.appendChild(footerLink);
-    //         footerProductsMenu.appendChild(footerLi);
-    //     }
-    // });
+            // Assemble and add it to the footer list
+            footerLi.appendChild(footerLink);
+            footerProductsMenu.appendChild(footerLi);
+        }
+    });
 
-// document.getElementById('menu-item-1370').href = 'photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html';
+document.getElementById('menu-item-1370').href = 'photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html';
 
 document.getElementById("contact-form1").addEventListener("submit", function(event){
     event.preventDefault();
