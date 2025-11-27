@@ -747,13 +747,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 name: 'Ultrasound',
                 href: 'our-products/diagnostic-three/index.html'
             }, {
-                name: 'Auto Lensmeter',
-                href: 'our-products/surgical-four/index.html'
-            }, {
                 name: 'Non-contact Tonometer',
                 href: 'our-products/imaging-five/index.html'
             }, {
                 name: 'Rebound Tonometer',
+                href: 'our-products/diagnostic-three/index.html'
+            }, {
+                name: 'Biometer and Portable ERG',
                 href: 'our-products/diagnostic-three/index.html'
             },
         ]
