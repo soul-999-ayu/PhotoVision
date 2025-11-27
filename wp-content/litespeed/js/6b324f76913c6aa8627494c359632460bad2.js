@@ -639,7 +639,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // --- Data for the new category and its products ---
         const newCategory = {
             name: 'Hongdee',
-            // href: 'product-categories/new-brand/index.html',
+            href: 'https://photovision.co.in/product-categories/applanation%20-tonometer-hongdee/index.html',
             products: [{
                 name: 'Ophthalmic Equipment',
                 href: 'https://photovision.co.in/product-categories/applanation%20-tonometer-hongdee/index.html'
