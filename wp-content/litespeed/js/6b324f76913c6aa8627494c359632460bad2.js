@@ -727,11 +727,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // --- Data for the new category and its products ---
         const newCategory = {
             name: 'Sun Kingdom',
-            href: 'https://photovision.co.in/product-categories/slitlamp-sun/index.html',
+            href: 'https://photovision.co.in/product-categories/scularsurfaceanalyzer-sun/index.html',
             products: [{
-                name: 'Slit Lamp Microscrope',
-                href: 'https://photovision.co.in/product-categories/slitlamp-sun/index.html'
-            }, {
                 name: 'Ocular Surface Analyzer',
                 href: 'https://photovision.co.in/product-categories/scularsurfaceanalyzer-sun/index.html'
             }, {
