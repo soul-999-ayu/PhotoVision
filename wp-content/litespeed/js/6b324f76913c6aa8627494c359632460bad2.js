@@ -428,9 +428,11 @@ document.querySelectorAll('a[href^="tel:"]').forEach(link => {
 document.querySelector(".whatsappbtn").setAttribute("href", "https://wa.link/ujpsik");
 
 document.addEventListener("DOMContentLoaded", function() {
-    let menuItem = document.getElementById("menu-item-406");
-    if (menuItem) {
-        menuItem.href="";
+    // Select the <a> tag that is inside #menu-item-406
+    let link = document.querySelector("#menu-item-406 a");
+    
+    if (link) {
+        link.href = "https://photovision.co.in/product-categories/autorefractometer/index.html";
     }
 });
 
@@ -627,7 +629,7 @@ if(document.getElementById('contact-form1')!=null){
 document.addEventListener("DOMContentLoaded", function () {
     let visionixLink = document.querySelector("#menu-item-1370 a");
     if (visionixLink) {
-        visionixLink.href = "https://photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html"; // Replace with your new URL
+        visionixLink.href = "https://photovision.co.in/product-categories/autorefractometer/index.html"; // Replace with your new URL
     }
 });
 
