@@ -636,273 +636,114 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
 
-        // --- Data for the new category and its products ---
-        const newCategory = {
+    // --- 1. CONSOLIDATED DATA ---
+    const categoriesToAdd = [
+        {
             name: 'Hongdee',
             href: 'https://photovision.co.in/product-categories/applanation%20-tonometer-hongdee/index.html',
-            products: [{
-                name: 'Ophthalmic Equipment',
-                href: 'https://photovision.co.in/product-categories/applanation%20-tonometer-hongdee/index.html'
-            }, {
-                name: 'Optometry Equipment',
-                href: 'https://photovision.co.in/product-categories/vision-chart-hongdee/index.html'
-            }, {
-                name: 'Ophthalmic Table',
-                href: 'https://photovision.co.in/product-categories/ophthalmic-motorized-table-hongdee/index.html'
-            }, 
+            products: [
+                { name: 'Ophthalmic Equipment', href: 'https://photovision.co.in/product-categories/applanation%20-tonometer-hongdee/index.html' },
+                { name: 'Optometry Equipment', href: 'https://photovision.co.in/product-categories/vision-chart-hongdee/index.html' },
+                { name: 'Ophthalmic Table', href: 'https://photovision.co.in/product-categories/ophthalmic-motorized-table-hongdee/index.html' }
             ]
-        };
-
-        // --- 1. Add New Category to the HEADER Menu ---
-
-        // Find the main "Products" dropdown menu in the header
-        const headerProductsMenu = document.querySelector('#menu-item-13 > ul.dropdown-menu');
-
-        if (headerProductsMenu) {
-            // Create the main list item for the new category
-            const newCategoryLi = document.createElement('li');
-            newCategoryLi.className = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-475 dropdown'; // Added a unique ID-like class
-
-            // Create the link for the new category
-            const newCategoryLink = document.createElement('a');
-            newCategoryLink.title = newCategory.name;
-            newCategoryLink.className = 'dropdown-item';
-            // Use innerHTML to include the Font Awesome icon
-            newCategoryLink.innerHTML = `<i class="fa ${newCategory.name.replace(' ', '-')}" aria-hidden="true"></i>&nbsp;${newCategory.name}`;
-
-            // Create the nested list for the products
-            const productsUl = document.createElement('ul');
-            productsUl.role = 'menu';
-            productsUl.className = 'dropdown-menu';
-
-            // Loop through the products and create a list item for each
-            newCategory.products.forEach(product => {
-                const productLi = document.createElement('li');
-                productLi.className = 'menu-item menu-item-type-taxonomy menu-item-object-product_categories';
-
-                const productLink = document.createElement('a');
-                productLink.title = product.name;
-                productLink.href = product.href;
-                productLink.className = 'dropdown-item';
-                productLink.innerHTML = `<i class="fa ${product.name.replace(/\s+/g, '-').toLowerCase()}" aria-hidden="true"></i>&nbsp;${product.name}`;
-
-                productLi.appendChild(productLink);
-                productsUl.appendChild(productLi);
-            });
-
-            // Assemble the new category element
-            newCategoryLi.appendChild(newCategoryLink);
-            newCategoryLi.appendChild(productsUl);
-
-            // Add the new category to the header menu
-            headerProductsMenu.appendChild(newCategoryLi);
-        }
-
-        // --- 2. Add New Brand to the FOOTER Menu ---
-
-        // Find the "Our Products" list in the footer
-        const footerProductsMenu = document.querySelector('footer #menu-our-products');
-
-        if (footerProductsMenu) {
-            // Create the list item for the footer
-            const footerLi = document.createElement('li');
-            footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom current-menu-item';
-
-            footerLi.ariaCurrent="page";
-
-            // Create the link for the footer
-            const footerLink = document.createElement('a');
-            footerLink.href = newCategory.href;
-            footerLink.textContent = newCategory.name;
-
-            // Assemble and add it to the footer list
-            footerLi.appendChild(footerLink);
-            footerProductsMenu.appendChild(footerLi);
-        }
-    });
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-
-        // --- Data for the new category and its products ---
-        const newCategory = {
+        },
+        {
             name: 'Sun Kingdom',
             href: 'https://photovision.co.in/product-categories/scularsurfaceanalyzer-sun/index.html',
-            products: [{
-                name: 'Ocular Surface Analyzer',
-                href: 'https://photovision.co.in/product-categories/scularsurfaceanalyzer-sun/index.html'
-            }, {
-                name: 'Perimeter',
-                href: 'https://photovision.co.in/product-categories/perimeter-sun/index.html'
-            }, {
-                name: 'Fundus Camera',
-                href: 'https://photovision.co.in/product-categories/funduscamera-sun/index.html'
-            }, {
-                name: 'Electrophysiology',
-                href: 'https://photovision.co.in/product-categories/electrophysiology-sun/index.html'
-                }, {
-                name: 'Ultrasound',
-                href: 'https://photovision.co.in/product-categories/ultrasound-sun/index.html'
-            }, {
-                name: 'Non-contact Tonometer',
-                href: 'https://photovision.co.in/product-categories/non-contacttonometer-sun/index.html'
-            }, {
-                name: 'Rebound Tonometer',
-                href: 'https://photovision.co.in/product-categories/reboundtonometer-sun/index.html'
-            }, {
-                name: 'Biometer and Portable ERG',
-                href: 'https://photovision.co.in/product-categories/bio-sun/index.html'
-            },
-        ]
-        };
-
-        // --- 1. Add New Category to the HEADER Menu ---
-
-        // Find the main "Products" dropdown menu in the header
-        const headerProductsMenu = document.querySelector('#menu-item-13 > ul.dropdown-menu');
-
-        if (headerProductsMenu) {
-            // Create the main list item for the new category
-            const newCategoryLi = document.createElement('li');
-            newCategoryLi.className = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-475 dropdown'; // Added a unique ID-like class
-
-            // Create the link for the new category
-            const newCategoryLink = document.createElement('a');
-            newCategoryLink.title = newCategory.name;
-            newCategoryLink.className = 'dropdown-item';
-            // Use innerHTML to include the Font Awesome icon
-            newCategoryLink.innerHTML = `<i class="fa ${newCategory.name.replace(' ', '-')}" aria-hidden="true"></i>&nbsp;${newCategory.name}`;
-
-            // Create the nested list for the products
-            const productsUl = document.createElement('ul');
-            productsUl.role = 'menu';
-            productsUl.className = 'dropdown-menu';
-
-            // Loop through the products and create a list item for each
-            newCategory.products.forEach(product => {
-                const productLi = document.createElement('li');
-                productLi.className = 'menu-item menu-item-type-taxonomy menu-item-object-product_categories';
-
-                const productLink = document.createElement('a');
-                productLink.title = product.name;
-                productLink.href = product.href;
-                productLink.className = 'dropdown-item';
-                productLink.innerHTML = `<i class="fa ${product.name.replace(/\s+/g, '-').toLowerCase()}" aria-hidden="true"></i>&nbsp;${product.name}`;
-
-                productLi.appendChild(productLink);
-                productsUl.appendChild(productLi);
-            });
-
-            // Assemble the new category element
-            newCategoryLi.appendChild(newCategoryLink);
-            newCategoryLi.appendChild(productsUl);
-
-            // Add the new category to the header menu
-            headerProductsMenu.appendChild(newCategoryLi);
-        }
-
-        // --- 2. Add New Brand to the FOOTER Menu ---
-
-        // Find the "Our Products" list in the footer
-        const footerProductsMenu = document.querySelector('footer #menu-our-products');
-
-        if (footerProductsMenu) {
-            // Create the list item for the footer
-            const footerLi = document.createElement('li');
-            footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom';
-
-            // Create the link for the footer
-            const footerLink = document.createElement('a');
-            footerLink.href = newCategory.href;
-            footerLink.textContent = newCategory.name;
-
-            // Assemble and add it to the footer list
-            footerLi.appendChild(footerLink);
-            footerProductsMenu.appendChild(footerLi);
-        }
-    });
-
-
-    document.addEventListener('DOMContentLoaded', function() {
-
-        // --- Data for the new category and its products ---
-        const newCategory = {
+            products: [
+                { name: 'Ocular Surface Analyzer', href: 'https://photovision.co.in/product-categories/scularsurfaceanalyzer-sun/index.html' },
+                { name: 'Perimeter', href: 'https://photovision.co.in/product-categories/perimeter-sun/index.html' },
+                { name: 'Fundus Camera', href: 'https://photovision.co.in/product-categories/funduscamera-sun/index.html' },
+                { name: 'Electrophysiology', href: 'https://photovision.co.in/product-categories/electrophysiology-sun/index.html' },
+                { name: 'Ultrasound', href: 'https://photovision.co.in/product-categories/ultrasound-sun/index.html' },
+                { name: 'Non-contact Tonometer', href: 'https://photovision.co.in/product-categories/non-contacttonometer-sun/index.html' },
+                { name: 'Rebound Tonometer', href: 'https://photovision.co.in/product-categories/reboundtonometer-sun/index.html' },
+                { name: 'Biometer and Portable ERG', href: 'https://photovision.co.in/product-categories/bio-sun/index.html' }
+            ]
+        },
+        {
             name: 'WeirenMeditek',
             href: 'https://photovision.co.in/product-categories/weiren/index.html',
-            products: [{
-                name: 'Weiren Products',
-                href: 'https://photovision.co.in/product-categories/weiren/index.html'
-            },
-        ]
-        };
+            products: [
+                { name: 'Weiren Products', href: 'https://photovision.co.in/product-categories/weiren/index.html' }
+            ]
+        }
+    ];
 
-        // --- 1. Add New Category to the HEADER Menu ---
+    const headerProductsMenu = document.querySelector('#menu-item-13 > ul.dropdown-menu');
+    const footerProductsMenu = document.querySelector('footer #menu-our-products');
 
-        // Find the main "Products" dropdown menu in the header
-        const headerProductsMenu = document.querySelector('#menu-item-13 > ul.dropdown-menu');
-
-        if (headerProductsMenu) {
-            // Create the main list item for the new category
+    // --- 2. LOOP: Inject all categories ---
+    if (headerProductsMenu) {
+        categoriesToAdd.forEach(cat => {
+            // A. Create Header Menu Item
             const newCategoryLi = document.createElement('li');
-            newCategoryLi.className = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-475 dropdown'; // Added a unique ID-like class
-
-            // Create the link for the new category
+            newCategoryLi.className = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown dynamic-added-item';
+            
             const newCategoryLink = document.createElement('a');
-            newCategoryLink.title = newCategory.name;
+            newCategoryLink.title = cat.name;
             newCategoryLink.className = 'dropdown-item';
-            // Use innerHTML to include the Font Awesome icon
-            newCategoryLink.innerHTML = `<i class="fa ${newCategory.name.replace(' ', '-')}" aria-hidden="true"></i>&nbsp;${newCategory.name}`;
+            newCategoryLink.innerHTML = `<i class="fa ${cat.name.replace(' ', '-')}" aria-hidden="true"></i>&nbsp;${cat.name}`;
 
-            // Create the nested list for the products
             const productsUl = document.createElement('ul');
             productsUl.role = 'menu';
             productsUl.className = 'dropdown-menu';
 
-            // Loop through the products and create a list item for each
-            newCategory.products.forEach(product => {
+            cat.products.forEach(product => {
                 const productLi = document.createElement('li');
                 productLi.className = 'menu-item menu-item-type-taxonomy menu-item-object-product_categories';
-
                 const productLink = document.createElement('a');
                 productLink.title = product.name;
                 productLink.href = product.href;
                 productLink.className = 'dropdown-item';
                 productLink.innerHTML = `<i class="fa ${product.name.replace(/\s+/g, '-').toLowerCase()}" aria-hidden="true"></i>&nbsp;${product.name}`;
-
                 productLi.appendChild(productLink);
                 productsUl.appendChild(productLi);
             });
 
-            // Assemble the new category element
             newCategoryLi.appendChild(newCategoryLink);
             newCategoryLi.appendChild(productsUl);
-
-            // Add the new category to the header menu
             headerProductsMenu.appendChild(newCategoryLi);
+
+            // B. Create Footer Menu Item
+            if (footerProductsMenu) {
+                const footerLi = document.createElement('li');
+                footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom';
+                const footerLink = document.createElement('a');
+                footerLink.href = cat.href;
+                footerLink.textContent = cat.name;
+                footerLi.appendChild(footerLink);
+                footerProductsMenu.appendChild(footerLi);
+            }
+        });
+
+        // --- 3. LAYOUT FIXER (ONLY FOR DESKTOP) ---
+        // We check if the window width is greater than 991px (a common desktop breakpoint).
+        // If it's a phone, this entire block is skipped.
+        if (window.innerWidth > 991) {
+            const allItems = headerProductsMenu.querySelectorAll(':scope > li');
+            const itemCount = allItems.length;
+            
+            if (itemCount > 0) {
+                const newWidth = (100 / itemCount) + "%";
+
+                // 1. Clear floats on the container
+                headerProductsMenu.style.overflow = 'hidden'; 
+
+                // 2. Float the items to make them sit in a row
+                allItems.forEach(item => {
+                    item.style.setProperty('width', newWidth, 'important');
+                    item.style.setProperty('max-width', newWidth, 'important');
+                    item.style.setProperty('float', 'left', 'important');
+                    item.style.setProperty('box-sizing', 'border-box', 'important'); 
+                    item.style.removeProperty('flex');
+                });
+            }
         }
-
-        // --- 2. Add New Brand to the FOOTER Menu ---
-
-        // Find the "Our Products" list in the footer
-        const footerProductsMenu = document.querySelector('footer #menu-our-products');
-
-        if (footerProductsMenu) {
-            // Create the list item for the footer
-            const footerLi = document.createElement('li');
-            footerLi.className = 'menu-item menu-item-type-custom menu-item-object-custom';
-
-            // Create the link for the footer
-            const footerLink = document.createElement('a');
-            footerLink.href = newCategory.href;
-            footerLink.textContent = newCategory.name;
-
-            // Assemble and add it to the footer list
-            footerLi.appendChild(footerLink);
-            footerProductsMenu.appendChild(footerLi);
-        }
-    });
+    }
+});
 
 document.getElementById('menu-item-1370').href = 'photovision.co.in/product-categories/hand-held-autorefractor-keratometer/index.html';
 
