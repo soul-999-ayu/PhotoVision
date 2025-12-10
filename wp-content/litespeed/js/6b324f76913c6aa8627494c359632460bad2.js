@@ -430,7 +430,7 @@ document.querySelector(".whatsappbtn").setAttribute("href", "https://wa.link/ujp
 document.addEventListener("DOMContentLoaded", function() {
     let menuItem = document.getElementById("menu-item-406");
     if (menuItem) {
-        menuItem.remove();
+        menuItem.href="";
     }
 });
 
