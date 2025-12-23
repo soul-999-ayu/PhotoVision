@@ -210,32 +210,97 @@
                            <div class="page-headerarchive">
                               <h1 class="page-title">Fundus Camera (Retinal Imaging System)</h1> <div class="category-archive-meta"> <p>The Fundus Camera is a specialized diagnostic imaging instrument essential for capturing high-resolution, color, and often angiography images of the fundus (the interior posterior surface of the eye, including the retina, optic disc, and macula).</p> <p>A fundamental instrument for the documentation and management of posterior segment diseases, the Fundus Camera is essential for visualizing the delicate retinal structures. This non-invasive device allows eye care professionals to accurately assess retinal blood vessels, the optic nerve head, and the macula, making it critical for the diagnosis and longitudinal tracking of conditions like diabetic retinopathy, glaucoma, and macular degeneration. </p> <p>The Fundus Camera employs a sophisticated optical system to photograph the retina with magnifications typically ranging from 20∘ to 45∘ fields of view. This technology simplifies the objective documentation of pathology, making it an indispensable tool in hospitals, tele-ophthalmology programs, and specialized retinal clinics. Its ability to create digital records is crucial for tracking disease progression and confirming treatment efficacy over time.</p> <p>Because of its ability to provide permanent, high-fidelity visual documentation of retinal health, the Fundus Camera is a crucial instrument in screening and referral pathways. Its vital role in the diagnostic procedure ensures confident and prompt detection of conditions that threaten sight, leading to effective management and preservation of vision.</p> <button id="shower">Read More</button> <button id="hider">Read Less</button> </div>
 							</div>
-                           <div class="row">
-                              <div class="col-md-6">
-                                 <div class="card product-card" id="post-192">
-                                    <a href="../../our-products/fundus/index.html" title="Permalink to Retinomax 5" rel="bookmark">
-                                       <div class="product-img-top">
-                                          <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MDIiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgNzAyIDYwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=" width="702" height="600" data-src="https://photovision.co.in/images/fundus.webp" class="attachment-large size-large wp-post-image" alt="Visionix Retinomax 5" decoding="async" fetchpriority="high" />
-                                       </div>
-                                       <div class="card-body">
-                                          <h3 class="card-title">SK-680A Fundus Camera</h3>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div>
-                              <!-- <div class="col-md-6">
-                                 <div class="card product-card" id="post-189">
-                                    <a href="../../our-products/ls5/index.html" title="Permalink to Retinomax Screeen" rel="bookmark">
-                                       <div class="product-img-top">
-                                          <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MDIiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgNzAyIDYwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=" width="702" height="600" data-src="https://photovision.co.in/images/ls.webp" class="attachment-large size-large wp-post-image" alt="Visionix Retinomax Screeen" decoding="async" />
-                                       </div>
-                                       <div class="card-body">
-                                          <h3 class="card-title">LS-5C/3/4 Slit Lamp</h3>
-                                       </div>
-                                    </a>
-                                 </div>
-                              </div> -->
-                           </div>
+                           <style>
+   /* 1. Ensure the row uses Flexbox so cards are equal height */
+   .row {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   /* 2. Card Styling */
+   .product-card {
+      height: 100%;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+   }
+   
+   .product-card:hover {
+       transform: translateY(-5px);
+   }
+
+   .product-card > a {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
+   }
+
+   /* 3. Image Container: Fixed Height */
+   .product-img-top {
+      height: 400px;       /* Adjust this if you want the box taller/shorter */
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+      padding: 15px;
+      border-bottom: 1px solid #f0f0f0;
+   }
+
+   /* 4. THE FIX: Force the image to fit inside without cutting */
+   .product-img-top img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain !important; /* !important forces the whole image to show */
+   }
+
+   /* 5. Card Body */
+   .card-body {
+      flex-grow: 1;
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+      background-color: #fff;
+   }
+   
+   .card-title {
+       margin: 0;
+       font-size: 1.1rem;
+       font-weight: 600;
+       color: #333;
+   }
+</style>
+
+<div class="row">
+   <div class="col-md-6" style="margin-bottom: 30px;">
+      <div class="card product-card" id="post-192">
+         <a href="../../our-products/fundus/index.html" title="Permalink to Retinomax 5" rel="bookmark">
+            <div class="product-img-top">
+               <img 
+                  data-lazyloaded="1" 
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MDIiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgNzAyIDYwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=" 
+                  data-src="https://photovision.co.in/images/fundus.webp" 
+                  class="attachment-large size-large wp-post-image" 
+                  alt="Visionix Retinomax 5" 
+                  decoding="async" 
+                  fetchpriority="high" 
+               / style="margin-top: 150px;" >
+            </div>
+            <div class="card-body">
+               <h3 class="card-title">SK-680A Fundus Camera</h3>
+            </div>
+         </a>
+      </div>
+   </div>
+   
+   </div>
                            <div class="clearfix"></div>
                         </div>
                      </div>

@@ -304,31 +304,55 @@
             <br><br>
 
             <div style="
-               /* This container ensures the video stays centered and doesn't get wider than defined */
-               width: 100%;
-               max-width: 300px; /* SET YOUR DESIRED PC WIDTH HERE (e.g., 250px, 400px) */
-               margin: 0 auto;
-            ">
-               <video
-                  src="https://photovision.co.in/images/vid1.mp4"
-                  controls
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  style="
-                        /* Make the video fill the container width, but never exceed its original size */
-                        width: 100%;
-                        height: auto; /* Auto height maintains aspect ratio */
-                        display: block; /* Removes any extra space below the video */
-                        /* The fixed height below ensures the proper shape on large screens, 
-                           but the 'height: auto' above will override it on small screens */
-                        max-height: 533px; /* SET HEIGHT TO MATCH YOUR DESIRED PC WIDTH (e.g., 300px width * 1.7778 = 533px) */
-                  "
-               >
-                  Your browser does not support the video tag.
-               </video>
-            </div>
+    /* FLEX CONTAINER: Aligns items in a row and centers them */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the images and video */
+    flex-wrap: wrap; /* Allows items to stack vertically on small mobile screens */
+    width: 100%;
+    margin: 0 auto;
+">
+
+    <div style="width: 100%; max-width: 300px;">
+        <img 
+            src="https://photovision.co.in/images/pos1.jpeg" 
+            alt="Position 1"
+            style="width: 100%; height: auto; display: block;"
+        >
+    </div>
+
+    <div style="
+        width: 100%;
+        max-width: 300px; 
+    ">
+        <video
+            src="https://photovision.co.in/images/vid1.mp4"
+            controls
+            autoplay
+            loop
+            muted
+            playsinline
+            style="
+                width: 100%;
+                height: auto;
+                display: block;
+                max-height: 533px;
+            "
+        >
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div style="width: 100%; max-width: 300px;">
+        <img 
+            src="https://photovision.co.in/images/pos2.jpeg" 
+            alt="Position 2"
+            style="width: 100%; height: auto; display: block;"
+        >
+    </div>
+
+</div>
 
             <section class="product-brand-sec">
                <div class="centered_div" style="margin-bottom: 25px;">
