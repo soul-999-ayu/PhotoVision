@@ -663,13 +663,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Biometer and Portable ERG', href: 'https://photovision.co.in/product-categories/bio-sun/index.html' }
             ]
         },
-        {
-            name: 'WeirenMeditek',
-            href: 'https://photovision.co.in/product-categories/weiren/index.html',
-            products: [
-                { name: 'Weiren Products', href: 'https://photovision.co.in/product-categories/weiren/index.html' }
-            ]
-        }
+        // {
+        //     name: 'WeirenMeditek',
+        //     href: 'https://photovision.co.in/product-categories/weiren/index.html',
+        //     products: [
+        //         { name: 'Weiren Products', href: 'https://photovision.co.in/product-categories/weiren/index.html' }
+        //     ]
+        // }
     ];
 
     const headerProductsMenu = document.querySelector('#menu-item-13 > ul.dropdown-menu');
